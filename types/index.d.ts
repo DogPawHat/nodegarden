@@ -1,7 +1,7 @@
 export = nodegarden;
 declare class nodegarden {
-    constructor(container: any);
-    render(start: any): void;
+    constructor(container: HTMLElement);
+    render(start: boolean): void;
     resize(): void;
     start(): void;
     stop(): void;
