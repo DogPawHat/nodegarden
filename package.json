@@ -11,7 +11,7 @@
     "start": "node watch",
     "build-css": "stylus -c -u nib css/index.styl -o public/css/main.css",
     "build-js": "rollup -f iife scripts/index.js | babel -o public/js/main-dev.js && uglifyjs public/js/main-dev.js -cmo public/js/main.js",
-    "build-lib-umd": "rollup -f umd -name nodegarden scripts/nodegarden.js | babel -o lib/js/main.js",
+    "build-lib-umd": "rollup -f umd -n nodegarden scripts/nodegarden.js | babel -o lib/js/main.js",
     "build-lib-es6": "rollup -f es6 scripts/nodegarden.js > lib/js/main.es6",
     "build-html": "jade views/index.jade -o public/"
   },
